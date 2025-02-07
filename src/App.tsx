@@ -32,10 +32,9 @@ const App: FC = () => {
             name='deadline'
             onChange={handleChange}/>
         </div>
-        <button>Add Task</button>
+        <button onClick={addTask}>Add Task</button>
       </div>
-      <div className ="todoList"
-      onClick={addTask}>
+      <div className ="todoList">
         sdsdsd</div>
       
     </div>
