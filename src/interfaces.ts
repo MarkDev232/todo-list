@@ -1,4 +1,6 @@
 export interface ITask {
+    taskid: number;
     taskName: string;
-    deadline: number;
+    deadline: string;
+    iscompleted: boolean;
 }
