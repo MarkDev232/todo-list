@@ -78,6 +78,7 @@ const completeTask = (taskidToComplete: number): void => {
         <button onClick={addTask}>Add Task</button>
       </div>
       <div className="todoList">
+        <h1 className="taskh1">Task</h1>
         <table>
           <thead>
             <tr className="tableHeader">
@@ -89,7 +90,7 @@ const completeTask = (taskidToComplete: number): void => {
           </thead>
           <tbody>
   {todoList
-    .filter((task) => !task.iscompleted) // Hide completed tasks
+    .filter((task: { iscompleted: any; }) => !task.iscompleted) // Hide completed tasks
     .map((task: ITask, key: number) => (
       <TodoTask
         key={key}
